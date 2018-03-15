@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Factura;
+import java.util.List;
 import javax.ejb.Stateless;
 
 /**
@@ -14,6 +16,30 @@ import javax.ejb.Stateless;
 @Stateless
 public class FacturaManager implements FacturaManagerLocal {
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+    @Override
+    public List<Factura> getAllFacturas() {
+        return null;
+    }
+
+    @Override
+    public Factura update(Factura factura) {
+        return null;
+    }
+
+    @Override
+    public Factura delete(Factura factura) {
+        return null;
+    }
+
+    @Override
+    public Factura insert(Factura factura) {
+        return null;
+    }
+
+    @Override
+    public Factura findByNumeroFactura(int numeroFactura) {
+        return null;
+    }
+
+    
 }

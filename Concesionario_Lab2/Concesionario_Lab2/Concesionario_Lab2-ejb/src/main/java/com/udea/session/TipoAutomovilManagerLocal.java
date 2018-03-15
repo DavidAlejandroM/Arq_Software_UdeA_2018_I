@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.TipoAutomovil;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,4 +16,13 @@ import javax.ejb.Local;
 @Local
 public interface TipoAutomovilManagerLocal {
     
+    List<TipoAutomovil> getAllLineas();
+
+    TipoAutomovil update(TipoAutomovil tipoAutomovil);
+
+    TipoAutomovil delete(TipoAutomovil tipoAutomovil);
+
+    TipoAutomovil insert(TipoAutomovil tipoAutomovil);
+
+    TipoAutomovil findById(int id);   
 }

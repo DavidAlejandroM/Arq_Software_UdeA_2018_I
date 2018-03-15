@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Marca;
+import java.util.List;
 import javax.ejb.Stateless;
 
 /**
@@ -14,6 +16,29 @@ import javax.ejb.Stateless;
 @Stateless
 public class MarcaManager implements MarcaManagerLocal {
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+    @Override
+    public List<Marca> getAllLineas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Marca update(Marca marca) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Marca delete(Marca marca) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Marca insert(Marca marca) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public Marca findById(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

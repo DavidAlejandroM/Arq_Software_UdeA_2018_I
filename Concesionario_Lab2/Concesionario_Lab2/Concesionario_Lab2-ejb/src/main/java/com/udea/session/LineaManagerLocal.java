@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Linea;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +15,15 @@ import javax.ejb.Local;
  */
 @Local
 public interface LineaManagerLocal {
+
+    List<Linea> getAllLineas();
+
+    Linea update(Linea linea);
+
+    Linea delete(Linea linea);
+
+    Linea insert(Linea linea);
+
+    Linea findById(int id);
     
 }

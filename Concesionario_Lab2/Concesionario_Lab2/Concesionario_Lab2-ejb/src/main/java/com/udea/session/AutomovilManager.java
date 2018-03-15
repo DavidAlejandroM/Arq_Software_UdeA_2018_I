@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Automovil;
+import java.util.List;
 import javax.ejb.Stateless;
 
 /**
@@ -13,7 +15,30 @@ import javax.ejb.Stateless;
  */
 @Stateless
 public class AutomovilManager implements AutomovilManagerLocal {
+    
+    @Override
+    public List<Automovil> getAllAutomoviles() {
+        return null;
+    }
+    
+    @Override
+    public Automovil update(Automovil automovil) {
+        return null;
+    }
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+    @Override
+    public Automovil insert(Automovil automovil) {
+        return null;
+    }
+
+    @Override
+    public Automovil delete(Automovil automovil) {
+        return null;
+    }
+
+    @Override
+    public Automovil findById(int id) {
+        return null;
+    }
+    
 }

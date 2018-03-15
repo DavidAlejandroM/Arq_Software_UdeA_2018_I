@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Marca;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -14,4 +16,13 @@ import javax.ejb.Local;
 @Local
 public interface MarcaManagerLocal {
     
+    List<Marca> getAllLineas();
+
+    Marca update(Marca marca);
+
+    Marca delete(Marca marca);
+
+    Marca insert(Marca marca);
+
+    Marca findById(int id);
 }

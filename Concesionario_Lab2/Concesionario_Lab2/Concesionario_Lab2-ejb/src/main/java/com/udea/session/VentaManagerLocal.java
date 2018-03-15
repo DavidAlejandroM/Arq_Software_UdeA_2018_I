@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Venta;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +15,13 @@ import javax.ejb.Local;
  */
 @Local
 public interface VentaManagerLocal {
-    
+    List<Venta> getAllLineas();
+
+    Venta update(Venta venta);
+
+    Venta delete(Venta venta);
+
+    Venta insert(Venta venta);
+
+    Venta findById(int id);      
 }

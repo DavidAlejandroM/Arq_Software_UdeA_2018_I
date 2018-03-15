@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.Factura;
+import java.util.List;
 import javax.ejb.Local;
 
 /**
@@ -13,5 +15,15 @@ import javax.ejb.Local;
  */
 @Local
 public interface FacturaManagerLocal {
+
+    List<Factura> getAllFacturas();
+
+    Factura update(Factura factura);
+
+    Factura delete(Factura factura);
+
+    Factura insert(Factura factura);
+
+    Factura findByNumeroFactura(int numeroFactura);
     
 }

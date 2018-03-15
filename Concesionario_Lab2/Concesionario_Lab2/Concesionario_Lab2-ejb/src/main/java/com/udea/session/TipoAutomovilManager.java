@@ -5,6 +5,8 @@
  */
 package com.udea.session;
 
+import com.udea.entity.TipoAutomovil;
+import java.util.List;
 import javax.ejb.Stateless;
 
 /**
@@ -14,6 +16,29 @@ import javax.ejb.Stateless;
 @Stateless
 public class TipoAutomovilManager implements TipoAutomovilManagerLocal {
 
-    // Add business logic below. (Right-click in editor and choose
-    // "Insert Code > Add Business Method")
+    @Override
+    public List<TipoAutomovil> getAllLineas() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public TipoAutomovil update(TipoAutomovil tipoAutomovil) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public TipoAutomovil delete(TipoAutomovil tipoAutomovil) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public TipoAutomovil insert(TipoAutomovil tipoAutomovil) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public TipoAutomovil findById(int id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
 }
