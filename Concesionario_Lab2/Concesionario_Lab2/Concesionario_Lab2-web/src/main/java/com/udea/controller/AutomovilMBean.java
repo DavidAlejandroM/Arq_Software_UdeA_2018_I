@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.udea.controller;
+
+import java.io.Serializable;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
+/**
+ *
+ * @author alejandro
+ */
+@Named(value = "automovilMBean")
+@SessionScoped
+public class AutomovilMBean implements Serializable{
+
+    /**
+     * Creates a new instance of AutomovilMBean
+     */
+    public AutomovilMBean() {
+    }
+    
+}
