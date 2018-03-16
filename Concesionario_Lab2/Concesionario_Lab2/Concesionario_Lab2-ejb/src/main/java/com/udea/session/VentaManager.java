@@ -35,7 +35,7 @@ public class VentaManager implements VentaManagerLocal {
 
     @Override
     public Venta update(Venta venta) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return em.merge(venta);
     }
 
     @Override

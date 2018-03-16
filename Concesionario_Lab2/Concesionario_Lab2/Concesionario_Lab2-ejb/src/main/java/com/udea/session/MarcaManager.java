@@ -35,7 +35,7 @@ public class MarcaManager implements MarcaManagerLocal {
 
     @Override
     public Marca update(Marca marca) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return em.merge(marca);
     }
 
     @Override

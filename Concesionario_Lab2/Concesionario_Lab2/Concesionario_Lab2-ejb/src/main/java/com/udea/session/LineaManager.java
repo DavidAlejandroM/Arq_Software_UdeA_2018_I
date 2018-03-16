@@ -35,7 +35,7 @@ public class LineaManager implements LineaManagerLocal {
 
     @Override
     public Linea update(Linea linea) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return em.merge(linea);
     }
 
     @Override

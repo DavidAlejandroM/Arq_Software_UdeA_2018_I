@@ -35,7 +35,7 @@ public class AutomovilManager implements AutomovilManagerLocal {
     
     @Override
     public Automovil update(Automovil automovil) {
-        return null;
+        return em.merge(automovil);
     }
 
     @Override

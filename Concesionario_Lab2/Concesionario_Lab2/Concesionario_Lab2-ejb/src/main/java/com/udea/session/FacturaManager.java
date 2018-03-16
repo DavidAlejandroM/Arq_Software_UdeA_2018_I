@@ -35,7 +35,7 @@ public class FacturaManager implements FacturaManagerLocal {
 
     @Override
     public Factura update(Factura factura) {
-        return null;
+        return em.merge(factura);
     }
 
     @Override
