@@ -6,7 +6,7 @@
 package com.udea.controller;
 
 import com.udea.entity.Automovil;
-import com.udea.session.AutomovilManagerLocal;
+import com.udea.AutomovilManagerLocal;
 import com.udea.session.FacturaManagerLocal;
 import com.udea.session.LineaManagerLocal;
 import com.udea.session.MarcaManagerLocal;
@@ -26,6 +26,9 @@ import javax.inject.Named;
 @SessionScoped
 public class AutomovilMBean implements Serializable{
 
+    @EJB
+    private AutomovilManagerLocal automovilManager;
+
     //@EJB
     //private VentaManagerLocal ventaManager;
 
@@ -41,9 +44,7 @@ public class AutomovilMBean implements Serializable{
     //@EJB
     //private FacturaManagerLocal facturaManager;
 
-    @EJB
-    private AutomovilManagerLocal automovilManager;
-
+   
     private Automovil automovil;
     private List<Automovil> automoviles;
     

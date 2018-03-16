@@ -28,7 +28,7 @@ public class TipoAutomovilManager implements TipoAutomovilManagerLocal {
     private javax.transaction.UserTransaction utx;
 
     @Override
-    public List<TipoAutomovil> getAllLineas() {
+    public List<TipoAutomovil> getAllTipos() {
         Query query = em.createNamedQuery("TipoAutomovil.findAll");
         return query.getResultList();
     }

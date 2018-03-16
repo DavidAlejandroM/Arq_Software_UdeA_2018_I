@@ -16,7 +16,7 @@ import javax.ejb.Local;
 @Local
 public interface TipoAutomovilManagerLocal {
     
-    List<TipoAutomovil> getAllLineas();
+    List<TipoAutomovil> getAllTipos();
 
     TipoAutomovil update(TipoAutomovil tipoAutomovil);
 

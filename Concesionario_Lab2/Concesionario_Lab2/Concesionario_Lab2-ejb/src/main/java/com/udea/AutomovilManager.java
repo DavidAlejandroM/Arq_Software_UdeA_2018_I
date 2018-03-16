@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.udea.session;
+package com.udea;
 
 import com.udea.entity.Automovil;
 import java.util.List;
