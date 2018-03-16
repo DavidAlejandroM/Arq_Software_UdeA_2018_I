@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Detalle Automovil</title>
+    </h:head>
+    <h:body>
+        <h1>Detalle Automovil</h1>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="IdAutomovil:" for="idAutomovil" />
+                    <h:inputText id="idAutomovil" value="#{automovilMBean.automovil.idAutomovil}" title="IdAutomovil" required="true" requiredMessage="The IdAutomovil field is required."/>
+                    <h:outputLabel value="Cilindraje:" for="cilindraje" />
+                    <h:inputText id="cilindraje" value="#{automovilMBean.automovil.cilindraje}" title="Cilindraje" />
+                    <h:outputLabel value="Color:" for="color" />
+                    <h:inputText id="color" value="#{automovilMBean.automovil.color}" title="Color" required="true" requiredMessage="The Color field is required."/>
+                    <h:outputLabel value="Precio:" for="precio" />
+                    <h:inputText id="precio" value="#{automovilMBean.automovil.precio}" title="Precio" />
+                    <h:outputLabel value="EnVenta:" for="enVenta" />
+                    <h:inputText id="enVenta" value="#{automovilMBean.automovil.enVenta}" title="EnVenta" />
+                    <h:outputLabel value="MesesGarantia:" for="mesesGarantia" />
+                    <h:inputText id="mesesGarantia" value="#{automovilMBean.automovil.mesesGarantia}" title="MesesGarantia" />
+                    <h:outputLabel value="Foto:" for="foto" />
+                    <h:inputTextarea rows="4" cols="30" id="foto" value="#{automovilMBean.automovil.foto}" title="Foto" required="true" requiredMessage="The Foto field is required."/>
+                    <h:outputLabel value="TipoAutomovil:" for="tipoAutomovil" />
+                    <h:selectOneMenu id="tipoAutomovil" value="#{automovilMBean.automovil.tipoAutomovil}" title="TipoAutomovil" >
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="Linea:" for="linea" />
+                    <h:selectOneMenu id="linea" value="#{automovilMBean.automovil.linea}" title="Linea" >
+                        <!-- TODO: update below reference to list of available items-->
+                        <f:selectItems value="#{fixme}"/>
+                    </h:selectOneMenu>
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

@@ -26,25 +26,24 @@ import javax.inject.Named;
 @SessionScoped
 public class AutomovilMBean implements Serializable{
 
-    @EJB
-    private VentaManagerLocal ventaManager;
+    //@EJB
+    //private VentaManagerLocal ventaManager;
 
-    @EJB
-    private TipoAutomovilManagerLocal tipoAutomovilManager;
+    //@EJB
+    //private TipoAutomovilManagerLocal tipoAutomovilManager;
 
-    @EJB
-    private MarcaManagerLocal marcaManager;
+    //@EJB
+    //private MarcaManagerLocal marcaManager;
 
-    @EJB
-    private LineaManagerLocal lineaManager;
+    //@EJB
+    //private LineaManagerLocal lineaManager;
 
-    @EJB
-    private FacturaManagerLocal facturaManager;
+    //@EJB
+    //private FacturaManagerLocal facturaManager;
 
     @EJB
     private AutomovilManagerLocal automovilManager;
 
-    
     private Automovil automovil;
     private List<Automovil> automoviles;
     
@@ -53,6 +52,9 @@ public class AutomovilMBean implements Serializable{
             refresh();
             return automoviles;
         
+    }
+    public Automovil getAutomovil(){
+        return automovil;
     }
     
     /**
